@@ -90,6 +90,32 @@
 
 
 </table>
+<!--deleting data-->
+<table>
+ <th>Delete</th>
+ <tr>
+  <td>Select Id:</td>
+  <td>
+    <select name="deleteid" id="deleteid">
+     @foreach($members as $value)
+    <option value="{{$value->id}}">{{$value->id}}</option>
+     @endforeach
+    </select>
+  </td>
+ </tr>
+ 
+ <tr>
+   <td colspan="2"><button type="submit" id="delete"  >Delete</td>
+ </tr>
+
+
+
+
+</table>
+
+
+
+
 
 
 @endsection
