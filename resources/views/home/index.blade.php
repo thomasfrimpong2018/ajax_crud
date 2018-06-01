@@ -44,7 +44,7 @@
    <td><input type="text" name="email"/></td>
   </tr>
   <tr>
-    <td colspan="2"><button type="submit" id="insert"  ></td>
+    <td colspan="2"><button type="submit" id="insert"  >Add Member</button></td>
   </tr>
 
 
