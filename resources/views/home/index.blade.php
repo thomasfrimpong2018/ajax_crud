@@ -14,11 +14,11 @@
   </tr>
 @foreach($members as $value)
 <tr>
-  <td>$value->id</td>
-  <td>$value->name</td>
-  <td>$value->address</td>
-  <td>$value->age</td>
-  <td>$value->email</td>
+  <td>{{$value->id}}</td>
+  <td>{{$value->name}}</td>
+  <td>{{$value->address}}</td>
+  <td>{{$value->age}}</td>
+  <td>{{$value->email}}</td>
 </tr>
 @endforeach
 
