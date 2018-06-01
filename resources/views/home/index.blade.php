@@ -12,7 +12,7 @@
   <td>Email</td>
   <td>Address</td>
   </tr>
-@foreach($member as $value)
+@foreach($members as $value)
 <tr>
   <td>$value->id</td>
   <td>$value->name</td>
