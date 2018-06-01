@@ -24,7 +24,33 @@
 
 </table>
 
+<!--insert data-->
+<table border="0">
+  <th colspan="2">Insert</th>
+  <tr>
+   <td>Name:</td>
+   <td><input type="text" name="name"/></td>
+  </tr>
+  <tr>
+   <td>Age:</td>
+   <td><input type="text" name="age"/></td>
+  </tr>
+  <tr>
+   <td>Address:</td>
+   <td><input type="text" name="address"/></td>
+  </tr>
+  <tr>
+   <td>Email:</td>
+   <td><input type="text" name="email"/></td>
+  </tr>
+  <tr>
+    <td colspan="2"><button type="submit" id="insert"  ></td>
+  </tr>
 
+
+
+
+</table>
 
 
 @endsection
