@@ -1,69 +1,55 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
 
-        <title>Laravel</title>
+    body{
+             font-weight:bold;
+             color:#384047;
+         }
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+         button{
+             padding:7px;
+             font-size:20px
+         }
+         table{
+             max-width:960px;
+             margin:10px auto;
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+         }
+         caption{
+             font-size:1.6em;
+             font-weight:400;
+             padding:10px 0;
+         }
+         thead th{
+             font-weight:400;
+             background:#8a97a0;
+         }
+         tr{
+             background:#f4f7f8;
+             border-bottom:1px solid #fff;
+             margin-bottom:5px;
+         }
+         tr:nth-child(even){
+             background:#e8eeef;
 
-            .full-height {
-                height: 100vh;
-            }
+         }
+         th, td{
+             text-align:left;
+             padding:20px;
+             font-weight:bold;
+         }
+         tfoot, td{
+             background:none;
+         }
+         table{
+             float:left
+         }
+         .content {
+          text-align: center;
+           }
 
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
+       </style>
 
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
+</head>
     <body>
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
@@ -79,16 +65,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel 5.5
+
+                    @yield('content')
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+
             </div>
         </div>
     </body>
