@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'MembersController@index');
+
+Route::post('insert', 'MembersController@insert');
+
+Route::put('update', 'MembersController@update');
+
+Route::delete('delete', 'MembersController@delete');
