@@ -134,6 +134,26 @@ $.ajax({
 })
 });
 
+//for updating Data
+$(#update).click(function(){
+$.ajax({
+  type:"post",
+  url:"update",
+  data:{
+    '_token':$(input[name=_token]).val(),
+    'name':$(input[name=upname]).val(),
+    'age':$(input[name=upage]).val(),
+    'address':$(input[name=upaddress]).val(),
+    'email':$(input[name=upemail]).val(),
+
+  },
+  success:function(data){
+    window.location.reload()
+
+  }
+})
+});
+
 
 
 </script>
