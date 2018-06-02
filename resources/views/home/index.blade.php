@@ -155,6 +155,24 @@ $.ajax({
 })
 });
 
+//deleting Data
+$(#delete).click(function(){
+$.ajax({
+  type:"post",
+  url:"delete",
+  data:{
+    '_token':$(input[name=_token]).val(),
+    'id':$(#deleteid).val(),
+
+  },
+  success:function(data){
+    window.location.reload()
+
+  }
+})
+});
+
+
 
 
 </script>
