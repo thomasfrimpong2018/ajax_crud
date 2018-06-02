@@ -142,6 +142,7 @@ $.ajax({
   url:"update",
   data:{
     '_token':$(input[name=_token]).val(),
+    'id':$(#upid).val(),
     'name':$(input[name=upname]).val(),
     'age':$(input[name=upage]).val(),
     'address':$(input[name=upaddress]).val(),
