@@ -51,6 +51,7 @@
 
 
 </table>
+{csrf_field()}  //token generation
 
 
 <!--Update data-->
@@ -103,7 +104,7 @@
     </select>
   </td>
  </tr>
- 
+
  <tr>
    <td colspan="2"><button type="submit" id="delete"  >Delete</td>
  </tr>
@@ -112,6 +113,30 @@
 
 
 </table>
+<!--Ajax section-->
+<script type="text/script">
+ //for ajax insert
+$(#insert).click(function(){
+$.ajax({
+  type:"post",
+  url:"insert",
+  data:{
+    '_token':$(input[name=_token]).val(),
+    'name':$(input[name=name]).val(),
+    'age':$(input[name=age]).val(),
+    'address':$(input[name=address]).val(),
+
+  },
+  success:function(data){
+    window.location.reload()
+
+  }
+})
+});
+
+
+
+</script>
 
 
 
