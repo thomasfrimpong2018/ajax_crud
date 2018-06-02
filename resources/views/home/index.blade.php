@@ -125,6 +125,7 @@ $.ajax({
     'name':$(input[name=name]).val(),
     'age':$(input[name=age]).val(),
     'address':$(input[name=address]).val(),
+    'email':$(input[name=email]).val()
 
   },
   success:function(data){
