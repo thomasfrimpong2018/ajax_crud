@@ -48,6 +48,7 @@
            }
 
        </style>
+       
 
 </head>
     <body>
@@ -63,14 +64,16 @@
                 </div>
             @endif
 
-            <div class="content">
-                <div class="title m-b-md">
+            
+                
 
                     @yield('content')
-                </div>
+                
 
 
-            </div>
+            
         </div>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/script" src="js/ajax.js"></script>
     </body>
 </html>
